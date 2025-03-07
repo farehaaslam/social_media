@@ -4,7 +4,6 @@ import * as Yup from 'yup';
 import axios from 'axios';
 import { useNavigate } from 'react-router';
 import { useState,useContext } from'react';
-import { PostContext } from '../Context/PostContext';
 function CreatePost() {
       const navigate=useNavigate()
   

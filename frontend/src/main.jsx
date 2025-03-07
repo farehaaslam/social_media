@@ -18,7 +18,6 @@ import Post from "./Components/Post.jsx";
 import Login from "./Components/Login.jsx";
 import Registration from "./Components/Registration.jsx";
 import Layout from "./Layout.jsx";
-import PostProvider from "./Context/PostContext.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>

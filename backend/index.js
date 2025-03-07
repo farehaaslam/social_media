@@ -3,10 +3,13 @@ const express=require("express")
 const db=require("./models")
 const app=express()
 const port=3000
+const env=require("dotenv")
+env.config()
 const cookieParser=require("cookie-parser")
-app.use(express.json()); // Correct usage
+app.use(express.json()); 
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser())
+
 //router
 const postRouter=require("./routes/posts")
 app.use("/api/posts",postRouter)

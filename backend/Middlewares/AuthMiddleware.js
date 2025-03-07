@@ -7,7 +7,7 @@ const validateToken=(req,res,next)=>{
         return res.status(403).json({error:"No token, authorization denied"})
     }
     try {
-        const validToken=jwt.verify(token,"farehaaslam") //valid token is decrypted  ismai username hai 
+        const validToken=jwt.verify(token,JWT_TOKEN) //valid token is decrypted  ismai username hai 
         req.user=validToken
         if(validToken){
             next()

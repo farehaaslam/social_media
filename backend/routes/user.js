@@ -5,7 +5,7 @@ const bcrypt=require("bcrypt");
 const { where } = require("sequelize");
 const jwt=require("jsonwebtoken")
 const cookieParser=require("cookie-parser")
-const ACCESS_TOKEN_SECRET="farehaaslam"
+const ACCESS_TOKEN_SECRET=process.env.JWT_TOKEN
 const saltRound=6;
 const {validateToken}=require("../Middlewares/AuthMiddleware")
 
